@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>meteo-app</title>
 </head>
 <body>
-    
+    <div id="card">
+        <div id="shearchBand">
+            <input type="text" id="cityName" placeholder="France Only">
+            <input type="button" value="GO"  onclick="buttonClickGET()"  />
+        </div>
+        <div id="today">
+            <div id="headToday">
+                <h1 id="city_name"></h1>
+                <p id="minMaxTemp"></p>
+            </div>
+            <div id="containW">
+                <div id="dateBox">
+                    <p id="dayName"></p>
+                    <p id="date"></p>
+                    <p id="wind"></p>
+                    <p id="humidity"></p>
+                </div>
+                <div>
+                    <img id="icon" src="" alt="">
+                </div>
+                <div id="temp"></div>
+            </div>
+            <div id="description"></div>
+        </div>
+        <div id="nextprev">
+            <div id="day2"></div>
+            <div id="day3"></div>
+            <div id="day4"></div>
+            <div id="day5"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
